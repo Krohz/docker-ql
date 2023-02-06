@@ -28,10 +28,12 @@ jobs:
     - name: Build Docker Image
       run: |
         docker build -t 77421/docker-ql:0.0.2 .
+        docker build -t 77421/docker-ql:latest .
         
     - name: Push Docker Image
       run: |
         docker push 77421/docker-ql:0.0.2
+        docker push 77421/docker-ql:latest
         
         
 #    - name: Build the Docker image
